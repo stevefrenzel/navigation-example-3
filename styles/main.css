@@ -1,0 +1,96 @@
+body {
+  background: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+nav {
+  border: 3px solid black;
+  margin: 1rem;
+  max-width: 1200px;
+  overflow-x: auto;
+  padding: 1rem;
+  scrollbar-color: black #fabb16;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 1130px;
+}
+
+nav::-webkit-scrollbar {
+  block-size: 1rem;
+}
+
+nav::-webkit-scrollbar-track {
+  background-color: #fabb16;
+}
+
+nav::-webkit-scrollbar-thumb {
+  background-color: #fabb16;
+  background-image: linear-gradient(
+    #fabb16 0,
+    #fabb16 0.25rem,
+    black 0.25rem,
+    black 0.75rem,
+    #fabb16 0.75rem
+  );
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo:hover a {
+  background: #fabb16;
+}
+
+a {
+  color: black;
+}
+
+main {
+  margin: 1rem;
+}
+
+p {
+  max-width: 60ch;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 2rem 0;
+  width: 60ch;
+}
+
+[aria-current='page'] {
+  background: lightsalmon;
+}
+
+#skip-link {
+  background: blue;
+  color: white;
+  left: 0;
+  outline: none;
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translateY(-100%);
+  width: 100%;
+}
+
+#skip-link:focus,
+#skip-link:focus-visible {
+  transform: translateY(0%);
+}
